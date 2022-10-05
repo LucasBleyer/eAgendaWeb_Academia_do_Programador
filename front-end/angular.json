@@ -14,7 +14,7 @@
         },
         "@schematics/angular:component": {
           "skipTests": true,
-          "inlineStyle": true
+          "inlineStyle": false
         }
       },
       "root": "",
