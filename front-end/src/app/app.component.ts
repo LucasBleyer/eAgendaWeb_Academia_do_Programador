@@ -8,7 +8,6 @@ import { Title } from '@angular/platform-browser';
   `
 })
 export class AppComponent {
-  title = 'front-end';
 
   constructor(titulo: Title){
     titulo.setTitle("Home | eAgenda");

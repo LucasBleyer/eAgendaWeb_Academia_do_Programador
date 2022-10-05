@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
+
 export class NavbarComponent implements OnInit {
 
-  public estaColapsada: Boolean = false;
+  public estaColapsada: boolean = false;
 
   constructor() { }
 

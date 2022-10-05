@@ -4,8 +4,6 @@ import { NavbarComponent } from './navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     NavbarComponent
@@ -15,6 +13,8 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     NgbModule
   ],
-  exports: [NavbarComponent]
+  exports: [
+    NavbarComponent
+  ]
 })
 export class NavbarModule { }
