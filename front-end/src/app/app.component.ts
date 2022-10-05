@@ -3,8 +3,9 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  template : `
+  template: `
     <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
