@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './auth/services/auth.service';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AuthService } from './auth/services/auth.service';
     AppRoutingModule,
     HttpClientModule,
 
+    CoreModule,
     AuthModule,
     NavbarModule
   ],
