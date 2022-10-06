@@ -6,6 +6,6 @@
   },
 
   "ConnectionStrings": {
-    "SqlServer": "Data Source=(LOCALDB)\\MSSQLLOCALDB;Initial Catalog=eAgendaOrm;Integrated Security=True"
+    "SqlServer": "Data Source=(LOCALDB)\\MSSQLLOCALDB;Initial Catalog=eAgendaWeb;Integrated Security=True"
   }
 }
