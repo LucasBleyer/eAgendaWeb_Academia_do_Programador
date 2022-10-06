@@ -51,6 +51,9 @@ export class RegistroComponent implements OnInit {
     if (this.form.invalid) return;
 
     this.registroVM = Object.assign({}, this.registroVM, this.form.value);
+
+    this.authService.registrarUsuario(this.registroVM)
+      .subscribe((dados => console.log(dados)))
   }
 
 }
