@@ -13,7 +13,7 @@
           <h1 class="text-primary fw-semibold">Registro de Usuário</h1>
 
           <div class="form-group my-3 position-relative">
-            <label class="form-label" for="nome">Nome de Usuário</label>
+            <label class="form-label mt-2" for="nome">Nome de Usuário</label>
             <input
               formControlName="nome"
               [ngClass]="nome?.touched && nome?.invalid ? 'is-invalid' : ''"
@@ -28,7 +28,7 @@
           </div>
 
           <div class="form-group my-3 position-relative">
-            <label class="form-label" for="email">Endereço de Email</label>
+            <label class="form-label mt-2" for="email">Endereço de Email</label>
             <input
               formControlName="email"
               [ngClass]="email?.touched && email?.invalid ? 'is-invalid' : ''"
@@ -44,7 +44,7 @@
 
           <!-- Password input -->
           <div class="form-group my-3 position-relative">
-            <label class="form-label" for="senha">Senha</label>
+            <label class="form-label mt-2" for="senha">Senha</label>
             <input
               formControlName="senha"
               [ngClass]="senha?.touched && senha?.invalid ? 'is-invalid' : ''"
@@ -60,7 +60,7 @@
 
            <!-- Password input -->
            <div class="form-group my-3 position-relative">
-            <label class="form-label" for="confirmarSenha">Confirmar Senha</label>
+            <label class="form-label mt-2" for="confirmarSenha">Confirmar Senha</label>
             <input
               formControlName="confirmarSenha"
               [ngClass]="confirmarSenha?.touched && confirmarSenha?.invalid ? 'is-invalid' : ''"
@@ -75,7 +75,7 @@
           </div>
 
           <!-- Submit button -->
-          <div class="card-footer g-grid d-flex gap-1 mt-4">
+          <div class="card-footer g-grid d-flex gap-1 mt-5">
             <button
               type="submit" class="btn btn-primary px-5">
               <i class="pi pi-save me-2"></i>

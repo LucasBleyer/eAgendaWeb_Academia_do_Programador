@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
+import { AuthService } from '../services/auth.service';
 import { RegistrarUsuarioViewModel } from '../view-models/registrar-usuario.view-model';
 
 @Component({
@@ -16,6 +17,7 @@ export class RegistroComponent implements OnInit {
   constructor(
     titulo: Title,
     private fb: FormBuilder,
+    private authService: AuthService
   ) {
     titulo.setTitle('Registro - e-Agenda');
   }

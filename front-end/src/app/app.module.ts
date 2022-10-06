@@ -7,6 +7,7 @@ import { NavbarModule } from './navbar/navbar.module';
 import { AuthModule } from './auth/auth.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './auth/services/auth.service';
 
 @NgModule({
   declarations: [
