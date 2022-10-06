@@ -38,7 +38,7 @@ namespace eAgenda.Webapi.Controllers
             return Ok(new
             {
                 sucesso = true,
-                dados = usuarioResult.Value
+                dados = GerarJwt(usuarioResult.Value)
             });
         }
 
