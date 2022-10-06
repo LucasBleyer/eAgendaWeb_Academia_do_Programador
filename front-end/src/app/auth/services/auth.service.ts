@@ -16,11 +16,13 @@ export class AuthService {
 
   public registrarUsuario(registro: RegistrarUsuarioViewModel): Observable<TokenViewModel> {
     const resposta = this.http
-      .post(this.apiUrl + "conta/registrar", registro, this.obterHeaderJson())
+      .post(this.apiUrl + 'conta/registrar', registro, this.obterHeaderJson())
       .pipe(map(this.processarDados), catchError(this.processarFalha));
 
     return resposta;
   }
+
+  
 
   private processarDados(resposta: any) {
     if (resposta.sucesso)
@@ -31,7 +33,7 @@ export class AuthService {
     return throwError(() => new Error(resposta.error.erros[0]));
   }
 
-  private obterHeaderJson(){
+  private obterHeaderJson() {
     return {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',

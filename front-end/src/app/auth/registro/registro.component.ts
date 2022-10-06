@@ -18,16 +18,15 @@ export class RegistroComponent implements OnInit {
 
   private registroVM: RegistrarUsuarioViewModel;
 
-  constructor (
+  constructor(
     titulo: Title,
     private fb: FormBuilder,
     private authService: AuthService,
     private localStorageService: LocalStorageService,
     private usuarioService: UsuarioService,
     private router: Router
-  )
-  {
-    titulo.setTitle('Registro - e-Agenda');
+  ) {
+    titulo.setTitle('Registro | eAgenda');
   }
 
   ngOnInit(): void {
@@ -64,17 +63,17 @@ export class RegistroComponent implements OnInit {
       .subscribe({
         next: (registroRealizado) => this.processarSucesso(registroRealizado),
         error: (erro) => this.processarFalha(erro)
-      })
+      });
   }
 
-  private processarSucesso(registroRealizado: TokenViewModel){
+  private processarSucesso(registroRealizado: TokenViewModel) {
     this.localStorageService.salvarDadosLocaisUsuario(registroRealizado);
     this.usuarioService.logarUsuario(registroRealizado.usuarioToken);
     this.router.navigate(['/dashboard']);
   }
 
-  private processarFalha(erro: any){
-    console.log(erro)
+  private processarFalha(erro: any) {
+    console.log(erro);
   }
 
 }
